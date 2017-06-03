@@ -5,7 +5,7 @@
 .global ps4AssemblerSystemCall
 .type ps4AssemblerSystemCall, @function
 ps4AssemblerSystemCall:
-	movabs $0x93a4FFFF8, %r11
+	movabs $0x9136FFFF8, %r11
 	movq (%r11), %r11
 	movq %rcx, %r10
 	call *%r11
